@@ -13,6 +13,11 @@
     />
     <link rel=“stylesheet”
     href=“https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css”>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -20,59 +25,95 @@
     <header>
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">
-            This is a modified jumbotron that occupies the entire horizontal
-            space of its parent.
-          </p>
+          <h1 class="display-4">My Calendar</h1>
+          <p class="time"></p>
         </div>
       </div>
     </header>
     <main>
-      <div class="row" class="0900hr">
-        <div class="col-md-1">0900</div>
-        <textarea class="col-md-10" id="0900-text"></textarea>
-        <button class="col-md-1" id="button0900">icon here</button>
-      </div>
-      <div class="row" class="1000hr">
-        <div class="col-md-1">1000</div>
-        <textarea class="col-md-10" id="1000-text"> </textarea>
-        <button class="col-md-1" id="button1000">icon here</button>
-      </div>
-      <div class="row" class="1100hr">
-        <div class="col-md-1">1100</div>
-        <textarea class="col-md-10" id="1100-text"> </textarea>
-        <button class="col-md-1" id="button1100">icon here</button>
-      </div>
-      <div class="row" class="1200hr">
-        <div class="col-md-1">1200</div>
-        <textarea class="col-md-10" id="1200-text"> </textarea>
-        <button class="col-md-1" id="button1200">icon here</button>
-      </div>
-      <div class="row" class="1300hr">
-        <div class="col-md-1">1300</div>
-        <textarea class="col-md-10" id="1300-text"> </textarea>
-        <button class="col-md-1" id="button1300">icon here</button>
-      </div>
-      <div class="row" class="1400hr">
-        <div class="col-md-1">1400</div>
-        <textarea class="col-md-10" id="1400-text"> </textarea>
-        <button class="col-md-1" id="button1400">icon here</button>
-      </div>
-      <div class="row" class="1500hr">
-        <div class="col-md-1">1500</div>
-        <textarea class="col-md-10" id="1500-text"> </textarea>
-        <button class="col-md-1" id="button1500">icon here</button>
-      </div>
-      <div class="row" class="1600hr">
-        <div class="col-md-1">1600</div>
-        <textarea class="col-md-10" id="1600-text"> </textarea>
-        <button class="col-md-1" id="button1600">icon here</button>
-      </div>
-      <div class="row" class="1700hr">
-        <div class="col-md-1">1700</div>
-        <textarea class="col-md-10" id="1700-text"> </textarea>
-        <button class="col-md-1" id="button1700">icon here</button>
+      <div class="time-row-wrapper">
+        <div class="row" data-time="09">
+          <div class="col-md-1">09:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="10">
+          <div class="col-md-1">10:00</div>
+          <textarea class="col-md-10"> </textarea>
+          <button class="col-md-1"></button>
+            <ion-icon name="add-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="row" data-time="11">
+          <div class="col-md-1">11:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="12">
+          <div class="col-md-1">12:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="13">
+          <div class="col-md-1">13:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="14">
+          <div class="col-md-1">14:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="15">
+          <div class="col-md-1">15:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="16">
+          <div class="col-md-1">16:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="17" id="entry-17">
+          <div class="col-md-1">17:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="18">
+          <div class="col-md-1">18:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="19">
+          <div class="col-md-1">19:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="20">
+          <div class="col-md-1">20:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="21">
+          <div class="col-md-1">21:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="22">
+          <div class="col-md-1">22:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="23">
+          <div class="col-md-1">23:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
+        <div class="row" data-time="24">
+          <div class="col-md-1">24:00</div>
+          <textarea class="col-md-10"></textarea>
+          <button class="col-md-1"></button>
+        </div>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>

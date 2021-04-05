@@ -1,4 +1,43 @@
+textarea {
+  outline: none;
+  border: 0;
+  padding: 15px 0 0 0;
+}
 .remove-boarder {
   border: none;
+  width: 100%;
+}
+.past {
+  background-color: #b8b3b5;
+}
+.present {
+  background-color: #fe7953;
+}
+.future {
+  background-color: #50c778;
+}
+.time-row-wrapper {
+  padding: 55px;
+}
+.time-row-wrapper .row {
+  margin-bottom: 1px;
+}
+.time-row-wrapper .col-md-1 {
+  display: flex;
+  align-items: center;
+  background: rgb(240, 240, 240);
+}
+
+.time-row-wrapper .row button {
+  background: #663194 !important;
+  outline: none;
+  border: 0;
+  border-radius: 0px 10px 10px 0px;
+}
+.time-row-wrapper .row button:after {
+  content: "\f40a";
+  font-family: IonIcons;
+  font-size: 25px;
+  color: #fff;
   width: 100%;
 }
